@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JabberScript</title>
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+  console.log("hello world"); //1
+
+  var myString = "string";
+  var yourString = "thisstring";
+  var newString = myString + yourString
+  console.log(newString); //2
+
+  var numOne = 23;
+  var numTwo = 25;
+  console.log(numOne + numTwo); //3 and 4
+
+  var myFavorite = ["to kill a mockingbird", "cubbies", "goodfellas", "riley"];
+    console.log(myFavorite); //5
+
+  myFavorite.push("tommy", "robbie", "connor");
+  console.log(myFavorite); //6
+
+
+  for (var i = 0 ; i < myFavorite.length ; i++){
+    console.log(myFavorite); //7
+  }
+
+  var sentence = "Schlitz four dollar toast godard truffaut bespoke neutra artisan pop-up. Chia keytar single-origin coffee sustainable disrupt.";
+  var array = [sentence];
+  console.log(array);
+
+  var sentence = "Schlitz four dollar toast godard truffaut bespoke neutra artisan pop-up. Chia keytar single-origin coffee sustainable disrupt.";
+  var array = sentence.split(" ")
+
+  var lgth = 6;
+  var longest = [];
+
+  for(var i = 0; i < array.length; i++){
+      if(array[i].length == lgth){
+          longest.push(array[i]);
+      }
+  }
+
+  console.log(longest);
+  
+</script>
+  </body>
+</html>
